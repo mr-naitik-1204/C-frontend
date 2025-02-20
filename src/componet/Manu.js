@@ -10,7 +10,7 @@ function Manu() {
     const [data, setData] = useState([])
 
     const fetchData = () => {
-        axios.get('https://backend-3btg.onrender.com/manu/show')
+        axios.get('https://backend-3btg.onrender.com')
             .then((res) => {
                 console.log(res.data.data);
                 setData(res.data.data)

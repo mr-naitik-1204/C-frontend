@@ -39,7 +39,7 @@ function Reservation() {
 
         try {
             // Sending POST request to the backend with form data
-            const response = await axios.post('https://backend-3btg.onrender.com/resrvation/send', formData);
+            const response = await axios.post('https://backend-3btg.onrender.com', formData);
             
             // Display success message
             alert('Reservation Submitted Successfully!');

@@ -9,7 +9,7 @@ function Sec7() {
     const [data, setData] = useState([])
 
     const fetchData = () => {
-        axios.get('https://backend-3btg.onrender.com/manu/show')
+        axios.get('https://backend-3btg.onrender.com')
             .then((res) => {
                 console.log("Fetched data length:", res.data.data.length); // Check the length
                 setData(res.data.data);

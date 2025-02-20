@@ -29,7 +29,7 @@ function Contact() {
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log(formData);
-    axios.post("https://backend-3btg.onrender.com/users/contect", formData)
+    axios.post("https://backend-3btg.onrender.com", formData)
     .then((response) => {
       console.log('Response:', response.data);
       alert("Your form has been submitted successfully!");
