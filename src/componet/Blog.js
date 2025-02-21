@@ -31,7 +31,7 @@ function Blog() {
   // Fetching data from backend
   const fetchData = () => {
     axios
-      .get('https://backend-3btg.onrender.com')
+      .get('https://backend-3btg.onrender.com/blog/show')
       .then((res) => {
         setData(res.data.Data);
       })
